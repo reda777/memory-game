@@ -1,0 +1,23 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card .imageName {
+    margin-top: 0.5rem;
+}
