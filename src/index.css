@@ -1,23 +1,59 @@
+html,body{
+    height: 100vh;
+    margin: 0;
+    background-color: #09183c;
+    color: white;
+}
+.App{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+.left{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.siteName{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 3vw;
+    height: 40%;
+    
+}
+.Counter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding-top: 50px;
+}
+.right{
+    width: 75%;
+    height: 100%;
+}
 .cards {
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 0.2rem;
 }
-
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    padding: 1rem;
+    border: 6px solid white;
+    padding: 0.5rem;
 }
-
+.card:hover{
+    cursor: pointer;
+}
 .card img {
-    max-width: 100%;
-    height: auto;
+    max-width: 8vw;
 }
-
 .card .imageName {
     margin-top: 0.5rem;
 }
